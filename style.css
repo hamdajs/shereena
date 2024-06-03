@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: #333;
+    color: white;
+}
+
+.main-title {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+    margin: 0;
+}
+
+#parallax-container {
+    height: 400vh; /* Adjust this based on the number of sections */
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+
+.parallax {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.story {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 80%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+#story1 {
+    background-image: url('img/part1.jpg');
+    z-index: 1;
+}
+
+#story2 {
+    background-image: url('img/part2.jpg');
+    z-index: 2;
+}
+
+#story3 {
+    background-image: url('img/part3.jpg');
+    z-index: 3;
+}
+
+#story4 {
+    background-image: url('img/part4.jpg');
+    z-index: 4;
+}
